@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>07-isNan</title>
+<script type="text/javascript">
+	var a = Number("a");//잘못된 같이 들어가..ㅁ?
+	document.write(a+"<br/>");
+	
+	var a_sum = a + 1;
+	document.write(a_sum+"<br/>");
+	
+	var a_str = a + "str";
+	document.write(a_str+"<br/>");
+	
+	var v1 = "가나다라"; //문자 !isNaN
+	var v2 = "12345"; //문자열인데 숫자로 나옴;;
+	var v3 = 12345; //당연 숫자
+	
+	var is_num1 = !isNaN(v1);
+	
+	if(is_num1){
+		document.write(v1+" 숫자 입니다.<br/>");
+	}else{
+		document.write(v1+" 숫자가 아닙니다.<br/>");
+	}
+	var is_num1 = !isNaN(v2);
+	
+	if(is_num1){
+		document.write(v2+" 숫자 입니다.<br/>");
+	}else{
+		document.write(v2+" 숫자가 아닙니다.<br/>");
+	}
+	var is_num1 = !isNaN(v3);
+	
+	if(is_num1){
+		document.write(v3+" 숫자 입니다.<br/>");
+	}else{
+		document.write(v3+" 숫자가 아닙니다.<br/>");
+	}
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>
